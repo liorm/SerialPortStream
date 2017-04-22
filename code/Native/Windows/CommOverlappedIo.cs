@@ -269,12 +269,7 @@ namespace RJCP.IO.Ports.Native.Windows
             NativeMethods.SerialEventMask.EV_RING |
             NativeMethods.SerialEventMask.EV_RLSD |
             NativeMethods.SerialEventMask.EV_RXCHAR |
-            NativeMethods.SerialEventMask.EV_TXEMPTY |
-            NativeMethods.SerialEventMask.EV_EVENT1 |
-            NativeMethods.SerialEventMask.EV_EVENT2 |
-            NativeMethods.SerialEventMask.EV_PERR |
-            NativeMethods.SerialEventMask.EV_RX80FULL |
-            NativeMethods.SerialEventMask.EV_RXFLAG;
+            NativeMethods.SerialEventMask.EV_TXEMPTY;
 
         private const NativeMethods.SerialEventMask maskReadPending =
             NativeMethods.SerialEventMask.EV_BREAK |
@@ -283,10 +278,7 @@ namespace RJCP.IO.Ports.Native.Windows
             NativeMethods.SerialEventMask.EV_ERR |
             NativeMethods.SerialEventMask.EV_RING |
             NativeMethods.SerialEventMask.EV_RLSD |
-            NativeMethods.SerialEventMask.EV_TXEMPTY |
-            NativeMethods.SerialEventMask.EV_EVENT1 |
-            NativeMethods.SerialEventMask.EV_EVENT2 |
-            NativeMethods.SerialEventMask.EV_PERR;
+            NativeMethods.SerialEventMask.EV_TXEMPTY;
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2001:AvoidCallingProblematicMethods", MessageId = "System.Runtime.InteropServices.SafeHandle.DangerousGetHandle")]
         private void OverlappedIoThread()
